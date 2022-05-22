@@ -1,0 +1,41 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: purple;
+    height: 7vh;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 4em;
+}
+.title{
+    color: white;
+    font-size: 1.75rem;
+    white-space: nowrap;
+}
+.odkaz{
+    color: white !important;
+    border-color: white !important;
+}
+
+@media only screen and (max-width: 700px) {
+    .navbar {
+      padding-inline: 2rem;
+    }
+    .title{
+        font-size: 1.35rem;
+    }
+    .odkaz{
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .navbar {
+      height: max-content;
+      flex-direction: column;
+    }
+}
